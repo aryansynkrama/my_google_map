@@ -70,6 +70,7 @@ class _MyLiveLocationState extends State<MyLiveLocation> {
             print("Latitude: ${e.latitude}, Longitude: ${e.longitude}");
             getMarkerIcon(url: 'https://avatars.githubusercontent.com/u/405837?v=4', markerSize: 64).then((value) {
               _markers.add(
+
                 Marker(
                   draggable: true,
                   icon: value != null ? BitmapDescriptor.fromBytes(value) : BitmapDescriptor.defaultMarker,
